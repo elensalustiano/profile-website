@@ -1,0 +1,47 @@
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+/* two columns */
+@media (min-width: 480px) {
+  .col-2 {
+    width: 50%;
+  }
+}
+
+/* three columns */
+@media (min-width: 728px) {
+  .col-3 {
+    width: 33.3333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-content {
+    width: 80%;
+  }
+
+  .col-sidebar {
+    width: 20%;
+  }
+}

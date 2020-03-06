@@ -1,0 +1,25 @@
+@import "../../styles/colors";
+
+.repo-container {
+  min-height: 100px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 6px 6px $lightgray;
+  border: 2px solid $gray;
+  padding: 12px 20px;
+
+  .repo-title {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .repo-language {
+    font-weight: bolder;
+  }
+}
